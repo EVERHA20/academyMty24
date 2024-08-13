@@ -9,6 +9,7 @@ public interface Operacion {
 	
 	//Método sin comportamiento
 	//public abstract
+	
 	int ejecuta();
 
 

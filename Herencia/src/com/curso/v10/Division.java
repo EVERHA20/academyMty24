@@ -1,14 +1,24 @@
 package com.curso.v10;
 
-public class Division extends Operacion {
+public class Division implements Operacion{
+	
+	int x; 
+	int y; 
 	
 	Division(int x,int y){
-		super(x,y);
+		this.x = x;
+		this.y = y;
+	}
+
+	@Override
+	public int ejecuta() {
+		return x/y;
 	}
 	
-	@Override
-	int ejecuta(){
-		return x / y;
+	@Override 
+	public String toString() {
+		return "Division [x=" + x + ", y=" + y + "]";
 	}
 
 }
+

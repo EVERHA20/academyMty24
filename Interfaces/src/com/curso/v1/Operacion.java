@@ -2,6 +2,7 @@ package com.curso.v1;
 
 public interface Operacion {
 	
+	//public
 	static int ejecutaStatic(int x) {
 		int r = ejecutaStaticPrivate(x);
 		return r;
@@ -12,6 +13,7 @@ public interface Operacion {
 		return x*x;
 	}
 	
+	//public
 	default int ejecutaDefault(int x) {
 		int r = ejecutaPrivate(x);
 		return r;

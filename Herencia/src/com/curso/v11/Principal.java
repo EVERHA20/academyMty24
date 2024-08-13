@@ -1,9 +1,9 @@
-package com.curso.v10;
+package com.curso.v11;
 
 public class Principal {
 
 	public static void main(String[] args) {
-		System.out.println("V10 Interfaces");
+		System.out.println("V11 Interfaces & Clase Abstract");
 
 		Operacion[] operaciones = new Operacion[] {
 				//new Operacion(8,4),

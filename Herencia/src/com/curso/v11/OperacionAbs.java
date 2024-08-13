@@ -1,0 +1,20 @@
+package com.curso.v11;
+//                                   IS-A
+public abstract class OperacionAbs implements Operacion {
+	
+	int x; 
+	int y; 
+	
+	OperacionAbs(int x,int y){
+		this.x = x;
+		this.y = y;
+	}
+	
+	@Override 
+	public String toString() {
+		return this.getClass().getSimpleName() +
+				" [x=" + x + ", y=" + y + "]";
+	}
+
+
+}

@@ -1,14 +1,23 @@
 package com.curso.v10;
 
-public class Multi extends Operacion{
+public class Multi implements Operacion{
+	
+	int x; 
+	int y; 
 	
 	Multi(int x,int y){
-		super(x,y);
+		this.x = x;
+		this.y = y;
 	}
 
 	@Override
-	int ejecuta(){
-		return x * y;
+	public int ejecuta() {
+		return x*y;
 	}
 	
+	@Override 
+	public String toString() {
+		return "Multi [x=" + x + ", y=" + y + "]";
+	}
+
 }

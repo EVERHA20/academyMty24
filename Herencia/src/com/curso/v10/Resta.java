@@ -1,14 +1,24 @@
 package com.curso.v10;
 
-public class Resta extends Operacion{
+public class Resta implements Operacion{
+	
+	int x; 
+	int y; 
 	
 	Resta(int x,int y){
-		super(x,y);
+		this.x = x;
+		this.y = y;
 	}
-	
+
 	@Override
-	int ejecuta(){
-		return x - y;
+	public int ejecuta() {
+		return x-y;
 	}
 	
+	@Override 
+	public String toString() {
+		return "Resta [x=" + x + ", y=" + y + "]";
+	}
+
 }
+
