@@ -24,6 +24,10 @@ public class Principal {
 		System.out.println("Pinguino");
 		Ave ave3 = new Pinguino();
 		ave3.volar();
+		
+		ave3.cv = cv3;
+		ave3.volar();
+
 
 	}
 
