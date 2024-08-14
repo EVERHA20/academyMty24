@@ -1,0 +1,5 @@
+Semana 4:
+
+Reemplazar el tema “Introducción a Hibernate” por “Introducción a Spring JPA”
+Reducir el tema de Spring Batch de 2 días a 1.
+Agregar un tema “Introducción a Colas de Mensajes” usando RabbitMQ
