@@ -28,7 +28,6 @@ public class Principal {
 		ave3.cv = cv3;
 		ave3.volar();
 
-
 	}
 
 }
