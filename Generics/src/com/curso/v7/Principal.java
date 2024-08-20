@@ -90,6 +90,9 @@ public class Principal {
 
 	static void showFigurasLower(List<? super Figura> lista) {
 		lista.add(new Figura(99.0));
+		lista.add(new Circulo(99.0));
+		//lista.add(new Object());
+		//lista.add("Hola Java");
 		System.out.println("LISTA FIGURAS O SUS SUPERCLASES");
 		for (Object o:lista)
 			System.out.println(o);
