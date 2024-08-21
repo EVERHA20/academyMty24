@@ -1,6 +1,8 @@
-package mr.obj.method;
+package mr.clase.method.V1;
 
 import java.util.function.Consumer;
+import java.util.function.BiPredicate;
+
 
 public class Principal {
 
@@ -9,7 +11,7 @@ public class Principal {
 		Mecanico instanciaMec = new Mecanico();
 		
 		Carro carro5 = new Carro();
-		carro5.id = 888;
+		carro5.id = 777;
 		
 		//instanciaMec.arreglar(carro5); //OO
 		
@@ -19,6 +21,9 @@ public class Principal {
 		Consumer<Carro> cons = instanciaMec::arreglar;
 		cons.accept(carro5);
 		
+		BiPredicate<Carro,Double> bp = instanciaMec::arreglar;
+		bp.test(carro5,200.08);
+
 	}
 
 }
@@ -31,6 +36,10 @@ class Carro{
 class Mecanico {
 	void arreglar(Carro c) {
 		System.out.println("Arreglando carro id: "+c.id);
+	}
+	boolean arreglar(Carro c, double costo) {
+		System.out.println("Arreglando carro id: "+c.id+", Costo:"+costo);
+		return true;
 	}
 }
 

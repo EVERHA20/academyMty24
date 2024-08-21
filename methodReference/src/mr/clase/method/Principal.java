@@ -1,6 +1,6 @@
-package mr.obj.method;
+package mr.clase.method;
 
-import java.util.function.Consumer;
+import java.util.function.BiConsumer;
 
 public class Principal {
 
@@ -9,15 +9,13 @@ public class Principal {
 		Mecanico instanciaMec = new Mecanico();
 		
 		Carro carro5 = new Carro();
-		carro5.id = 888;
-		
-		//instanciaMec.arreglar(carro5); //OO
+		carro5.id = 999;
 		
 		//DEFINICION LAMBDA
-		//Consumer<Carro> cons =  c -> instanciaMec.arreglar(c);
+		//BiConsumer<Mecanico,Carro> biCons =  (obj,car) -> obj.arreglar(car);
 		
-		Consumer<Carro> cons = instanciaMec::arreglar;
-		cons.accept(carro5);
+		BiConsumer<Mecanico,Carro> biCons = Mecanico::arreglar;
+		biCons.accept(instanciaMec,carro5);
 		
 	}
 
