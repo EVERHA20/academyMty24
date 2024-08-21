@@ -23,6 +23,14 @@ public class PrincipalReduce {
 		Integer r = streamInt.reduce(1, (s, c) -> s * c); 
 		
 		System.out.println(r); //120
+		
+		System.out.println("*************");
+		
+		Stream<String> stream2 = Stream.of("w", "o", "l", "f!");
+
+		stream2.reduce("", (i, s) -> i+s); 
+		
+		System.out.println(); // 5
 	}
 
 }
