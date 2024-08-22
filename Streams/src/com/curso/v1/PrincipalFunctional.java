@@ -34,7 +34,8 @@ public class PrincipalFunctional {
 				.filter(e->e.getSalary()<400)
 				.peek(y->y.setSalary(y.getSalary()+200))
 				.filter(z -> z.getNombre().length()>6)
-				.sorted(Comparator.comparing(Employee::getNombre))
+				.sorted(Comparator.comparing(Employee::getNombre)
+						.thenComparing(Employee::getId))
 				.map(e -> e.getNombre())
 				//.count();
 				.collect(Collectors.toList()); //TERMINA
