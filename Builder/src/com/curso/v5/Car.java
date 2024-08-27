@@ -6,39 +6,33 @@ public class Car implements Tipo {
     private TripComputer tripComputer;
     private GPS gps;
 
+    @Override
     public Tipo setSeats(int seats) {
         this.seats = seats;
         return this;
     }
 
+    @Override
     public Tipo setEngine(Engine engine) {
         this.engine = engine;
         return this;
     }
 
-    public void setTripComputer(TripComputer tripComputer) {
+    @Override
+    public Tipo setTripComputer(TripComputer tripComputer) {
         this.tripComputer = tripComputer;
+        return this;
     }
 
-    public void setGPS(GPS gps) {
+    @Override
+    public Tipo setGPS(GPS gps) {
         this.gps = gps;
+        return this;
     }
 
 	@Override
 	public String toString() {
 		return "Car [seats=" + seats + ", engine=" + engine + ", tripComputer=" + tripComputer + ", gps=" + gps + "]";
-	}
-
-	@Override
-	public Tipo setTripComputer() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Tipo setGPS() {
-		// TODO Auto-generated method stub
-		return null;
 	}
     
     
@@ -59,26 +53,28 @@ class Manual implements Tipo {
 	@Override
 	public Tipo setSeats(int number) {
 		// TODO Auto-generated method stub
-		return null;
+		return this;
 	}
 
 	@Override
 	public Tipo setEngine(Engine engine) {
 		// TODO Auto-generated method stub
-		return null;
+		return this;
 	}
 
 	@Override
-	public Tipo setTripComputer() {
+	public Tipo setTripComputer(TripComputer tripComputer) {
+		// TODO Auto-generated method stub
+		return this;
+	}
+
+	@Override
+	public Tipo setGPS(GPS gps) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public Tipo setGPS() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 }
 
 class Engine {

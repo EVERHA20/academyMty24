@@ -36,6 +36,6 @@ public class CarBuilder implements Builder {
 
     @Override
     public Tipo getResult() {
-        return this.car;
+        return car;
     }
 }

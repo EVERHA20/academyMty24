@@ -6,16 +6,16 @@ public class Director {
         builder.reset()
         .setSeats(5)
         .setEngine(new SUVEngine())
-        .setTripComputer()
-        .setGPS();
+        .setTripComputer(new TripComputer())
+        .setGPS(new GPS());
     }
 
     public void makeSportsCar(Builder builder) {
     	builder.reset()
         .setSeats(2)
         .setEngine(new SportEngine())
-        .setTripComputer()
-        .setGPS();
+        .setTripComputer(new TripComputer())
+        .setGPS(new GPS());
     }
 }
 
