@@ -9,6 +9,8 @@ import java.sql.*;
 public class JdbcTest {
 
 	public static void main(String[] args) throws SQLException {
+		
+		System.out.println("***V1***");
 
 		Connection myConn = null;
 		Statement myStmt = null;
@@ -16,7 +18,7 @@ public class JdbcTest {
 		
 		try {
 			// 1. Get a connection to database
-			myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo", "springstudent" , "springstudent");
+			myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo", "jdbcstudent" , "jdbcstudent");
 			
 			System.out.println("Database connection successful!\n");
 			
