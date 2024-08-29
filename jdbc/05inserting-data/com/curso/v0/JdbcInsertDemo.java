@@ -15,8 +15,8 @@ public class JdbcInsertDemo {
 		ResultSet myRs = null;
 		
 		String dbUrl = "jdbc:mysql://localhost:3306/demo";
-		String user = "springstudent";		
-		String pass = "springstudent";
+		String user = "jdbcstudent";		
+		String pass = "jdbcstudent";
 
 		try {
 			// 1. Get a connection to database
@@ -28,11 +28,14 @@ public class JdbcInsertDemo {
 			// 3. Insert a new employee
 			System.out.println("Inserting a new employee to database\n");
 			
-			int rowsAffected = myStmt.executeUpdate(
-				"insert into employees " +
-				"(last_name, first_name, email, department, salary) " + 
-				"values " + 
-				"('Wright', 'Eric', 'eric.wright@foo.com', 'HR', 33000.00)");
+			String insert = """
+					insert into employees 
+					(last_name, first_name, email, department, salary)  
+					values 
+					('Wright', 'Eric', 'eric.wright@foo.com', 'HR', 33000.00)
+					""";
+			
+			int rowsAffected = myStmt.executeUpdate(insert);
 			
 			// 4. Verify this by getting a list of employees
 			myRs = myStmt.executeQuery("select * from employees order by last_name");
