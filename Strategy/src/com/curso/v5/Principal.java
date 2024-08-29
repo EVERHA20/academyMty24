@@ -17,16 +17,19 @@ public class Principal {
 		ave1.cv = cv2;
 		ave1.volar();
 		
-		System.out.println("Pato");
-		Ave ave2 = new Pato();
-		ave2.volar();
-		
-		System.out.println("Pinguino");
-		Ave ave3 = new Pinguino();
-		ave3.volar();
-		
-		ave3.cv = cv3;
-		ave3.volar();
+		ave1.cv = cv3;
+		ave1.volar();
+//		
+//		System.out.println("Pato");
+//		Ave ave2 = new Pato();
+//		ave2.volar();
+//		
+//		System.out.println("Pinguino");
+//		Ave ave3 = new Pinguino();
+//		ave3.volar();
+//		
+//		ave3.cv = cv3;
+//		ave3.volar();
 
 	}
 
