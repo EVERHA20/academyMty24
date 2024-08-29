@@ -8,7 +8,7 @@ import java.sql.*;
  */
 public class JdbcTest {
 
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args) {
 		
 		System.out.println("***V1***");
 
@@ -30,7 +30,7 @@ public class JdbcTest {
 			
 			// 4. Process the result set
 			while (myRs.next()) {
-				System.out.println(myRs.getString("last_name") + ", " + myRs.getString("first_name"));
+				System.out.println(myRs.getString("last_name") + ", " + myRs.getString("email"));
 			}
 		}
 		catch (Exception exc) {
@@ -38,15 +38,27 @@ public class JdbcTest {
 		}
 		finally {
 			if (myRs != null) {
-				myRs.close();
+				try {
+					myRs.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
 			}
 			
 			if (myStmt != null) {
-				myStmt.close();
+				try {
+					myStmt.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
 			}
 			
 			if (myConn != null) {
-				myConn.close();
+				try {
+					myConn.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 	}
