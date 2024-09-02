@@ -1,5 +1,58 @@
+*** SEGUNDA VERSION TEMARIO ***
+
+Semana 4: Hibernate, Spring Batch, Pruebas unitarias con JUnit5 y Mockito.
+
+Día 1: Introducción a Hibernate
+
+Conceptos básicos de ORM (Object-Relational Mapping)
+Configuración de Hibernate
+Mapeo de entidades y relaciones
+Crear, Leer, Actualizar y Eliminar (CRUD) con Hibernate
+
+Día 2: Introducción a Spring Batch
+
+Conceptos básicos de Spring Batch
+Configuración de un proyecto Spring Batch
+Creación de un Job simple en Spring Batch
+
+Día 3: Procesamiento de datos con Spring Batch
+
+Lectura y escritura de datos en Spring Batch
+Creación de pasos y tareas en un Job
+
+Día 4: Pruebas Unitarias con JUnit5.
+
+Conceptos básicos de JUnit5
+Creación de pruebas unitarias
+Pruebas unitarias con Code Coverage
+
+Dia 5: Mockito.
+
+Introducción a Mockito y creación de mocks
+Integración de JUnit5 y Mockito para pruebas más efectivas
+
+Semana 5: Proyectos Finales
+
+- Spring Boot 3 REST API (with full database CRUD real-time project) (JDBC,JPA)
+- Spring Boot 3 REST API Security (with password encryption in the database)
+- Spring Boot 3 REST API with Spring Data JPA (with full database CRUD real-time project)
+
+Nota: La versión a usar de Java en la academia es Java 17
+
+*** TERCERA VERSION TEMARIO ***
+
 Semana 4:
 
 Reemplazar el tema “Introducción a Hibernate” por “Introducción a Spring JPA”
 Reducir el tema de Spring Batch de 2 días a 1.
 Agregar un tema “Introducción a Colas de Mensajes” usando RabbitMQ
+
+
+
+
+
+
+
+
+
+
