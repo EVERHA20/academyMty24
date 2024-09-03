@@ -4,6 +4,7 @@ import com.luv2code.springboot.cruddemo.entity.Employee;
 
 import java.util.List;
 
+//SPRING JPA
 public interface EmployeeDAO {
 
     List<Employee> findAll();
