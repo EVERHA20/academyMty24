@@ -34,7 +34,7 @@ Integración de JUnit5 y Mockito para pruebas más efectivas
 Semana 5: Proyectos Finales
 
 - Spring Boot 3 REST API (with full database CRUD real-time project) (JDBC,JPA)
-- Spring Boot 3 REST API Security (with password encryption in the database)
+- Spring Boot 3 REST API Security (with password encryption in the database) *
 - Spring Boot 3 REST API with Spring Data JPA (with full database CRUD real-time project)
 
 Nota: La versión a usar de Java en la academia es Java 17
@@ -55,7 +55,7 @@ Proyectos Semana 4.
 4. Proyecto Mockito.
 
 Semana 5.
-RabbitMQ
+RabbitMQ *
 
 
 

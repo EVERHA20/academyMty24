@@ -17,7 +17,7 @@ class CalculoFinanciertoV2Test {
 	@BeforeEach
 	public void setUp() {
 		cfc = mock(CalculoFinancieroCloud.class);
-		calc = new CalculoFinanciero();
+		calc = new CalculoFinanciero(cfc);
 	}
 	
     @Test
@@ -28,7 +28,9 @@ class CalculoFinanciertoV2Test {
         double resultado = calc.calcula(1000000L, 10, 5.0f, (byte) 4);
         
         assertEquals(954453.58, resultado, 0.01, "El cálculo financiero básico no coincide con el valor esperado");
-        //verify(cfc).calculoExterno(1L,2F,3,(byte)4);
+        
+        //Verificamos que se llamó al mock con los argumentos correctos
+        verify(cfc).calculoExterno(1000000L, 10, 5.0f, (byte) 4);
     }
 
 }
