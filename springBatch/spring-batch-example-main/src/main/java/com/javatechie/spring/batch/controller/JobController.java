@@ -20,16 +20,33 @@ public class JobController {
     @Autowired
     private JobLauncher jobLauncher;
     @Autowired
-    private Job job;
+    private Job job; //<== INYECTAR Job
 
     @PostMapping("/importCustomers")
     public void importCsvToDBJob() {
         JobParameters jobParameters = new JobParametersBuilder()
-                .addLong("startAt", System.currentTimeMillis()).toJobParameters();
+                .addLong("startAt", System.currentTimeMillis())
+                .toJobParameters();
         try {
             jobLauncher.run(job, jobParameters);
-        } catch (JobExecutionAlreadyRunningException | JobRestartException | JobInstanceAlreadyCompleteException | JobParametersInvalidException e) {
+        } catch (JobExecutionAlreadyRunningException |  
+        		JobRestartException |
+        		JobInstanceAlreadyCompleteException |
+        		JobParametersInvalidException e) {
             e.printStackTrace();
-        }
+        } 
+        
+        /* SIN MULTICATCH
+        try {
+            jobLauncher.run(job, jobParameters);
+        } catch (JobExecutionAlreadyRunningException e) {
+            e.printStackTrace();
+        } catch (JobRestartException e) {
+        	e.printStackTrace();
+        } catch (JobInstanceAlreadyCompleteException e) {
+        	e.printStackTrace();
+        } catch (JobParametersInvalidException e) {
+        	e.printStackTrace();
+        }*/
     }
 }
