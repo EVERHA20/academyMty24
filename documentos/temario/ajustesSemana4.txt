@@ -48,6 +48,17 @@ Reducir el tema de Spring Batch de 2 días a 1.
 Agregar un tema “Introducción a Colas de Mensajes” usando RabbitMQ
 
 
+Proyectos Semana 4.
+1. Spring Boot 3 REST API JPA CRUD
+2. Spring Boot 3 REST API Spring Data JPA CRUD (Se puede usar el mismo Entity)
+3. Spring Batch (Nuevo Entity Ingles, considerando el mismo flujo del demo visto en Clase)
+4. Proyecto Mockito.
+
+Semana 5.
+RabbitMQ
+
+
+
 
 
 
